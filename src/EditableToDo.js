@@ -14,7 +14,7 @@ export default class EditableToDo extends Component {
       <form onSubmit={this.onSubmit}>
         <li className="editable todo">
           <div className="input-group">
-            <input type="text" className="form-control" onInput={this.onInput} value={text} defaultValue={this.props.task.text}></input>
+            <input type="text" className="form-control" onChange={this.onInput} value={text} />
             <div className="input-group-append">
               <button className="btn btn-primary">Guardar</button>
             </div>
@@ -30,7 +30,6 @@ export default class EditableToDo extends Component {
 
   onSubmit = () => {
     const { task, editTask } = this.props;
-
     editTask(task, { ...task, editable: false, text: this.state.text });
   }
 }

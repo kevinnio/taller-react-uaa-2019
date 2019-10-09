@@ -27,9 +27,13 @@ body {
   width: 100%;
 }
 
-.todo .fa {
+.todo .actions {
   float: right;
+}
+
+.todo .fa {
   cursor: pointer;
+  padding-right: .5em;
 }
 
 .todo:nth-child(even) {
