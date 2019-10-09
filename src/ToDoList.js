@@ -4,14 +4,12 @@ import ToDoInput from "./ToDoInput";
 import EditableToDo from "./EditableToDo";
 
 export default class ToDoList extends Component {
-  state = {
-    tasks: [
-      {
-        id: 1,
-        editable: false,
-        text: "Lavar ropa"
-      }
-    ]
+  state = { tasks: [] };
+
+  componentDidMount() {
+    this.addNewTask('Lavar la ropa');
+    this.addNewTask('Sacar al perro');
+    this.addNewTask('Hacer la tarea');
   }
 
   render() {
@@ -49,6 +47,7 @@ export default class ToDoList extends Component {
     tasks.push({
       id: tasks.length + 1,
       editable: false,
+      completed: false,
       text: task
     });
     this.setState({ tasks: tasks });

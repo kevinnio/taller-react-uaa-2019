@@ -31,6 +31,11 @@ body {
   float: right;
 }
 
+.todo .text {
+  display: inline-block;
+  margin-left: .5em;
+}
+
 .todo .fa {
   cursor: pointer;
   padding-right: .5em;
@@ -38,4 +43,12 @@ body {
 
 .todo:nth-child(even) {
   background: white;
+}
+
+.todo.completed {
+  background: rgb(151, 228, 161);
+}
+
+.todo.completed .text {
+  text-decoration: line-through;
 }
