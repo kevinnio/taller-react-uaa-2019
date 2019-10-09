@@ -15,6 +15,9 @@ tareas pendientes desarrollada con React.
 2. Dentro del repo, ejecutar `npm install` o `yarn install`.
 3. Ejecutar `npm start` o `yarn start`.
 
+### Diapositivas del taller
+Puedes encontrar las diapositivas del taller [aquí](https://drive.google.com/file/d/1e2jZ1JSZx265HiU4GHr9PvbNvlrPrfQe/view?usp=sharing).
+
 ### Autores
 - [Kevin Perez](https://github.com/kevinnio)
 - [Samantha Bello](https://github.com/SamBelmor)
