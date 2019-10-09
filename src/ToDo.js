@@ -1,15 +1,8 @@
 import React, { Component } from "react";
 
 export default class ToDo extends Component {
-  constructor(props) {
-    super();
-
-    this.state = { completed: props.task.completed };
-  }
-
   render() {
-    const { text } = this.props.task;
-    const { completed } = this.state;
+    const { text, completed } = this.props.task;
 
     return (
       <li className={`todo ${completed && "completed"}`}>
@@ -35,9 +28,7 @@ export default class ToDo extends Component {
   }
 
   onCompleteClick = (event) => {
-    this.setState({ completed: event.target.checked }, () => {
-      const { task } = this.props;
-      this.props.editTask(task, {...task, completed: this.state.completed});
-    });
+    const { task } = this.props;
+    this.props.editTask(task, {...task, completed: event.target.checked});
   }
 }
