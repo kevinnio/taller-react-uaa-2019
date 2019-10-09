@@ -5,7 +5,7 @@ import './App.css';
 export default class App extends Component {
   render() {
     return (
-      <div class="todo-list-app">
+      <div className="todo-list-app">
         <ToDoList />
       </div>
     )

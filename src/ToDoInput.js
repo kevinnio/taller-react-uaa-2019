@@ -3,11 +3,11 @@ import React, { Component } from "react";
 export default class ToDoInput extends Component {
   render() {
     return (
-      <form class="todo-input" onSubmit={this.onSubmit}>
-        <div class="input-group">
-          <input id="newTask" type="text" class="form-control" placeholder="Nueva tarea..." />
-          <div class="input-group-append">
-            <button class="btn btn-primary" type="submit">Agregar</button>
+      <form className="todo-input" onSubmit={this.onSubmit}>
+        <div className="input-group">
+          <input id="newTask" type="text" className="form-control" placeholder="Nueva tarea..." />
+          <div className="input-group-append">
+            <button className="btn btn-primary" type="submit">Agregar</button>
           </div>
         </div>
       </form>
