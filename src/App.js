@@ -21,8 +21,8 @@ export default class App extends Component {
       removeTask: this.removeTask
     }
 
-    const uncompletedTasks = this.state.tasks.filter(t => !t.completed);
-    const completedTasks = this.state.tasks.filter(t => t.completed);
+    const uncompletedTasks = this.state.tasks.filter(t => t.completed === false);
+    const completedTasks = this.state.tasks.filter(t => t.completed === true);
 
     return (
       <div className="todo-list-app">

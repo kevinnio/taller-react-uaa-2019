@@ -7,7 +7,7 @@ Taller de React llevado a cabo durante el Congreso de Ciencias Exactas 2019 en
 la Universidad Autónoma de Aguascalientes. El proyecto consiste en una lista de
 tareas pendientes desarrollada con React.
 
-<img src="https://i.imgur.com/UHRc8ZV.png">
+<img src="https://i.imgur.com/7XD2aG1.png">
 
 ### Setup
 
